@@ -1,0 +1,12 @@
+'settings':
+  ignore_if_same_revision: true
+'/':
+  skip: false
+  scheme: ftp
+  user: lovecino@xifox.net
+  password: 'alfil10asesino20'
+  passive: true
+  host: ftp.xifox.net
+  port: 21
+  path: /
+  local_path: website/
