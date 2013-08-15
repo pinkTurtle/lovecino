@@ -1,0 +1,66 @@
+div#footer
+  .wrap
+    font: normal 14px/21px $menu
+    height: 500px
+    background-image: url('images/bg-footer.jpg')
+    background-position: 0 -80px
+    padding-top:20px
+  div#footer_more_posts
+    width: 205px
+    margin: 0 auto
+    display:none
+
+  ul#smallmenu_social
+    margin: 55px auto 0px
+    width: 105px
+    display: block
+
+  div#footer_become_cub
+    display: block
+    width: 285px
+    margin: 0 auto
+    position: relative
+    text-align: center
+    margin-top: 20px
+    a
+      color: white
+      double-shadow: white $yellow #bc9c75 white 66px
+    &:before
+    &:after
+      content: " "
+      width: 190px
+      height: 6px
+      border-top: 1px solid $border_footer
+      border-bottom: 1px solid $border_footer
+      position: absolute
+      top: 25px
+    &:after
+      left: -190px
+    &:before
+      right: -190px
+
+  div#footer_visit_now
+    margin: 10px auto
+    width: 190px
+
+  div#footer_boyscout
+    margin: 40px auto 0px
+
+  ul#footer_footer
+    font: normal 14px/21px $regular
+    font-size: 10px
+    margin: 10px auto
+    width: 540px
+    li.footer_footer_item
+      color: #e3caac
+      display: block
+      float: left
+      padding: 5px
+      border-left: 1px solid #e3caac
+      height: 6px
+      line-height: 6px
+      &:first-child
+        border-left: none
+      a
+        color: $yellow
+

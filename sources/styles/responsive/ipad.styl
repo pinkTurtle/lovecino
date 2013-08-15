@@ -1,0 +1,214 @@
+@media only screen and (max-width : 1024px)
+
+  body
+    background: url("images/bg-repeat.jpg") !important
+
+  #main-container
+    width: 100%
+
+  #primary
+    width: 960px
+    margin: 0px auto
+
+  nav#main_sidebar
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    right: 6px;
+    display: none
+
+  #main-container #header, #main-container #main, #main-container #footer
+    margin-left: 0px
+    padding-left: 0px
+
+  div.sidebar_header
+    position: absolute
+    top: 0px
+    left: 30px
+    background-position: -505px -72px
+    height: 68px
+    width: 140px
+
+  div#header div.wrap
+    height: 175px
+
+    ul#smallmenu_social
+      position: relative
+      margin: 0px auto
+
+    #header_be_cub
+      margin: 0px auto
+
+    div#header_title
+      margin: 6px auto 0px
+
+@media only screen and (max-width : 980px)
+  #primary
+    width: 720px
+
+@media only screen and (max-width : 930px)
+  #filters_menus
+    .wrap
+      font: normal 14px/21px $menu
+      height: 70px
+      background-color: #0f384c
+      border-top: 1px solid #4f7687
+      border-bottom: 1px solid black
+      position: relative
+      .header_reset
+        margin: 22px 22px 0px 33px
+        width: 88px
+        float: left
+
+      div.filter_social,
+      div.filter_resources,
+      div.filter_rank,
+      div.view_by
+        display: block
+        width: 100px
+        margin: 26px 8px 0px 0px
+        float: left
+        text-align: center
+        double-shadow-p: white $yellow #0f384c #c5ccd2 18px
+      div.filter_resources
+        width: 54px
+
+      div.filter_rank
+        margin: 26px 8px 0px 15px
+      div.view_by
+        width: 55px
+        margin: 26px 0 0 275px
+
+  $x = -80px
+  ul#filters_social
+    margin: 12px 0px
+    float: left
+    width: 200px
+    li.filtersocial_item
+      margin: 5px 2px
+      width: 30px
+      height: 30px
+      border: 2px solid #FFdd33
+      border-radius: 17px
+      box-shadow: 0px 1px 1px #000
+      float: left
+      background-image: url('images/sprite_mobile.png')
+      &:hover
+      &.current
+        border-color:#3b5570
+      a
+        text-indent: -9999px
+        display: block
+        width: 100%
+        height: 100%
+      &.cubhub
+        display:none
+      &.facebook
+        background-position: -4px $x
+        &:hover
+        &.current
+          background-position: -4px ( $x - 40px )
+      &.twitter
+        background-position: -114px $x
+        &:hover
+        &.current
+          background-position: -114px ( $x - 40px )
+      &.pinterest
+        background-position: -78px $x
+        &:hover
+        &.current
+          background-position: -78px ( $x - 40px )
+      &.instagram
+        background-position: -152px $x
+        &:hover
+        &.current
+          background-position: -152px ( $x - 40px )
+      &.youtube
+        background-position: -41px $x
+        &:hover
+        &.current
+          background-position: -41px ( $x - 40px )
+
+  $x = -77px
+  ul#filters_rank
+    margin: 9px 0px
+    width: 200px
+    float: left
+    li.filterrank_item
+      margin: 5px 2px
+      width: 36px
+      height: 36px
+      float: left
+      a
+        text-indent: -9999px
+        display: block
+        width: 100%
+        height: 100%
+      background-image: url('images/sprite_mobile.png')
+      &.tiger-cub
+        background-position: -185px $x
+        &:hover
+        &.current
+          background-position: -185px ( $x - 40px )
+      &.bobcat
+        background-position: -222px $x
+        &:hover
+        &.current
+          background-position: -222px ( $x - 40px )
+      &.wolf
+        background-position: -259px $x
+        &:hover
+        &.current
+          background-position: -259px ( $x - 40px )
+      &.bear
+        background-position: -296px $x
+        &:hover
+        &.current
+          background-position: -295px ( $x - 40px )
+      &.webelos
+        background-position: -333px $x
+        &:hover
+        &.current
+          background-position: -333px ( $x - 40px )
+
+  ul#view_by
+    margin: 6px 0px
+    float: right
+    width: 140px
+    li.view_by
+      margin: 5px 2px
+      width: 41px
+      height: 41px
+      border: 3px solid #FFdd33
+      border-radius: 30px
+      box-shadow: 0px 1px 1px #000
+      float: left
+      background-image: url('images/bg-brown.jpg')
+      &.current
+      &:hover
+        background-color: rgba(0,0,0,0.3)
+        background-image: none
+        border-color:#3b5570
+      a
+        text-indent: -9999px
+        display: block
+        width: 100%
+        height: 100%
+      &.grid
+        a
+          background-image: url('images/sprite.png')
+          background-position: -589px -165px
+        &:hover
+        &.current
+          //background-position: -191px ( $x - 48px )
+      &.list
+        a
+          background-image: url('images/sprite.png')
+          background-position: -630px -165px
+        &:hover
+        &.current
+          //background-position: -50px ( $x - 48px )
+
+  div.sidebar_header
+    left: 20px
+

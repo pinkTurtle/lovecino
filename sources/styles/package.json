@@ -1,0 +1,11 @@
+{
+  "name": "sbr-program",
+  "version": "1.0.0",
+  "description": "Summit program page and child pages",
+  "dependencies": {},
+  "devDependencies": {
+    "stylus": "*",
+    "nib": "*"
+  },
+  "main": "program"
+}

@@ -1,0 +1,44 @@
+div#header
+  .wrap
+    text-align: center
+    height: 166px
+    background-image: url('images/bg-footer.jpg')
+    background-position: center 236px
+    font: normal 14px/21px $menu
+    padding-top: 1px
+
+    ul#smallmenu_social
+      position: absolute
+      top: 10px
+      right: 10px
+
+    #header_boyscouts
+      width: 210px
+      margin: 10px auto 0px
+
+    div#header_title
+      display: block
+      width: 420px
+      margin: 10px auto 0px
+      position: relative
+      text-align: center
+      double-shadow: white $yellow #bc9c75 white 66px
+      &:before
+      &:after
+        content: " "
+        width: 80px
+        height: 6px
+        border-top: 1px solid $border_footer
+        border-bottom: 1px solid $border_footer
+        position: absolute
+        top: 25px
+      &:after
+        left: -80px
+      &:before
+        right: -80px
+
+    #header_be_cub
+      margin: 10px auto 0px
+      width: 190px
+
+ 

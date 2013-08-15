@@ -1,0 +1,47 @@
+/*
+Theme URI: www.lovecino.com.ar
+Description: Sitio web oficial de 'Lo vecino'
+Author: Damian Suarez 
+Author URI: http://retrofox.com.ar
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: loveicno.com.ar
+*/
+
+@import 'sources/styles/node_modules/nib'
+
+/* Isotope css3 support */
+@import 'sources/styles/deps/isotope.styl'
+
+@import 'sources/styles/deps/clean.styl'
+
+/* commons */
+@import 'sources/styles/commons/colors.styl'
+@import 'sources/styles/commons/fonts.styl'
+@import 'sources/styles/commons/base.styl'
+@import 'sources/styles/commons/buttons.styl'
+
+/* Component */
+// @import 'sources/javascript/main/build/build.styl'
+
+*
+  box-sizing: border-box
+
+html
+  margin: 0
+  height: 100%
+
+body.initial-page
+  height: 100%
+  background-color: #5e86cc
+  #main
+    max-width: 800px
+    width: 100%
+    height: 100%
+    background-color: #5e86cc
+    background-image: url(images/lo_vecino-logo_v2.jpg)
+    background-position: center -10%
+    background-repeat: no-repeat
+    margin: 0 auto
+    background-size: 100%

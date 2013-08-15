@@ -1,0 +1,45 @@
+
+div.sidebar_header
+  background-image: url('images/sprite.png')
+  background-position: -91px -172px
+  height: 110px
+  margin-bottom: 25px
+  width: 236px
+  text-indent: -99999px
+  position: relative
+  z-index: 5
+  a
+    height: 100%
+    width: 100%
+    display: block
+nav#main_sidebar
+  font: normal 24px $menu
+  
+  ul.sidebar_menu
+    background: url('images/bg-sidebar.png') repeat-y
+    height:100%
+    width:236px
+    margin:0
+    position: absolute
+    li.menu-item
+      font-size: 24px
+      background-color: $blue
+      text-align: center
+      text-transform:uppercase
+      height: 70px
+      line-height: 70px
+      margin-left: 6px
+      border-top: 1px solid $border_menu_light
+      border-bottom: 1px solid $border_menu_dark
+      a
+        color: $yellow
+        height: 100%
+        width: 100%
+        display: block
+      &:hover
+      &.current-menu-item
+        border-top: 1px solid $yellow
+        border-bottom: 1px solid #063142
+        background-color: $yellow
+        a
+          color: $blue

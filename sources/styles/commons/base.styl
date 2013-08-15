@@ -1,0 +1,302 @@
+/*
+#Basic Styles
+================================================== */
+body
+  font: normal 12px/21px $regular
+  color: $text_color
+  -webkit-font-smoothing antialiased /* Fix for webkit rendering */
+  regular-webkit-text-size-adjust 100%
+  background-color: $darkgray
+
+/* #Typography
+================================================== */
+h1, h2, h3, h4, h5, h6 
+  font: normal 12px/21px $title
+  color: $text_color
+  line-height: 1em
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a 
+  font-weight: inherit;
+h1 
+  font-size: 24px
+  margin-bottom: 14px
+h2 
+  font-size: 22px
+  margin-bottom: 10px
+h3 
+  font-size: 20px
+  margin-bottom: 8px
+h4 
+  font-size: 18px
+  margin-bottom: 4px
+h5 
+  font-size: 16px
+h6 
+  font-size: 14px
+p 
+span
+  color: $text_color
+  margin: 0 0 20px 0;
+p img 
+  margin: 0;
+p.lead 
+  font-size: 21px; line-height: 27px; color: #777;
+em 
+  font-style: italic; 
+strong
+  font-weight: bold; color: #333;
+small 
+  font-size: 80%
+iframe
+  margin: 10px 0
+/*  Blockquotes  */
+blockquote p 
+  font-size 15px!important
+  font-weight 500
+  line-height 24px
+  color #C5C5C5
+  font-style italic 
+  margin 0
+  text-align left
+  &:after
+    content "\201D"
+  &:before
+    content "\201C"
+
+blockquote
+  margin: 0 0 20px
+  cite
+    display: block
+    font-size: 13px
+    font-style: normal
+    font-weight: normal
+    text-align: center
+
+blockquote cite:before { content: "\2014 \0020"; }
+blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+
+hr
+  border: solid black
+  border-width: 1px 0 0
+  clear: both
+  margin: 10px 0 30px
+  height: 0
+
+#primary #content .item > div img.valign { 
+  height: 100%;
+  vertical-align: middle;
+  width: 0px;
+} 
+
+/* #Links
+================================================== */
+a 
+a:visited
+  color: $links
+  outline: none
+  text-decoration: none
+a:hover
+a:focus
+  color: $links_hover
+  text-decoration: none
+p a
+p a:visited 
+  line-height: inherit
+
+
+/* #Lists
+================================================== */
+ul, ol { margin-bottom: 20px; }
+ul { list-style: none outside;}
+ol { list-style: decimal; }
+ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+ul.square { list-style: square outside; }
+ul.circle { list-style: circle outside; }
+ul.disc { list-style: disc outside; }
+ul ul, ul ol,
+ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+ul ul li, ul ol li,
+ol ol li, ol ul li { margin-bottom: 6px; }
+li { line-height: 18px}
+ul.large li { line-height: 21px; }
+li p { line-height: 21px; }
+
+/* #Images
+================================================== */
+
+img.scale-with-grid 
+  max-width 100%
+  height auto 
+/* #buttons
+================================================== */
+a.button,
+a.button:visited,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] 
+  display inline-block
+  text-align center
+  margin 0 10px 0 0 
+  background #df5c26
+  background #df5c26 linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%) 
+  color #fff
+  border none
+  border-radius 0
+  text-shadow none
+  text-transform uppercase
+  font normal 24px/37px
+  cursor: pointer;
+  margin-bottom: 20px;
+  padding: 8px 10px;
+  box-shadow 0 18px 25px -10px rgba(0, 0, 0, 0.5)
+  -webkit-font-smoothing:antialiased 
+a.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover 
+  background #df5c26
+  background #df5c26 linear-gradient(top,rgba(0,0,0,.2) 100%, rgba(255,255,255,.2) 0%) 
+  text-decoration none  
+a.button:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active 
+  background #df5c26
+  background #df5c26 linear-gradient(top,rgba(0,0,0,.2) 100%, rgba(255,255,255,.2) 0%) 
+a.button.full-width,
+a.button.full-width:visited,
+button.full-width,
+input[type="submit"].full-width,
+input[type="reset"].full-width,
+input[type="button"].full-width 
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: center; 
+a.button.small,
+a.button.small:visited,
+button.small,
+input[type="submit"].small,
+input[type="reset"].small,
+input[type="button"].small 
+  font-size 20px
+  line-height normal
+  padding 4px 5px
+  width 48%
+  box-sizing border-box
+  margin 0 2% 0 0
+/* Fix for odd Mozilla border & padding issues */
+button::-moz-focus-inner,
+input::-moz-focus-inner 
+  border: 0;
+  padding: 0;
+
+
+/* #Forms
+================================================== */
+
+form 
+  margin-bottom: 20px;
+fieldset 
+  margin-bottom: 20px; 
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select 
+  border: 1px solid #ebebeb
+  font: normal 14px/21px
+  padding: 6px 8px;
+  outline: none;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 28px 
+  color: #545454;
+  margin: 0;
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  background: #fff;
+  box-shadow: 0px -1px 1px rgba(255,255,255,.5), inset 0px 1px 4px rgba(0,0,0,0.1);
+  box-sizing: border-box
+  text-shadow: none
+select 
+  padding: 0; 
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus 
+  color: #444;
+  box-shadow:  0 0 3px rgba(0,0,0,.2); 
+input[type="text"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+input[type="text"]::-moz-input-placeholder,
+input[type="password"]::-moz-input-placeholder,
+input[type="email"]::-moz-input-placeholder,
+textarea::-moz-input-placeholder
+  color: #545454
+textarea
+  min-height: 60px;
+textarea:disabled,
+input:disabled,
+input[type="text"]:disabled::-webkit-input-placeholder,
+input[type="password"]:disabled::-webkit-input-placeholder,
+input[type="email"]:disabled::-webkit-input-placeholder,
+textarea:disabled::-webkit-input-placeholder,
+input[type="text"]:disabled::-moz-input-placeholder,
+input[type="password"]:disabled::-moz-input-placeholder,
+input[type="email"]:disabled::-moz-input-placeholder,
+textarea:disabled::-moz-input-placeholder
+  color: #bdbdbd;
+  background-color: #fbfbfb
+input[type="submit"]:disabled
+  background: #fbfbfb  linear-gradient(top, rgba(255,255,255,.1) 0%,rgba(0,0,0,.2) 100%) 
+textarea:disabled:hover,
+input:disabled:hover
+  color: #bdbdbd;
+  background-color: #fbfbfb
+input[type="submit"]:disabled:hover
+  background: #fbfbfb  linear-gradient(top, rgba(255,255,255,.1) 0%,rgba(0,0,0,.2) 100%)
+label,
+legend 
+  display: inline;
+  font-weight: normal;
+  font-size: 12px; 
+select 
+  width: 220px; 
+input[type="checkbox"] 
+  display: inline; 
+label span,
+legend span 
+  font-weight: normal;
+  font-size: 13px;
+  color: #444;
+input[type="text"].dp
+  background: #FFF url('images/arrowdp.png ') no-repeat right 15px
+input[type="text"].states-dropdown,
+input[type="text"].filter-dropdown
+  display: inline-block
+  width: 300px
+input[type="text"].zipcode
+  display: inline-block
+  width: 140px  
+button.small    
+input[type="submit"].small
+  margin: 20px auto 0
+  display: block
+
+/* #Misc
+================================================== */
+.remove-bottom
+  margin-bottom 0 !important
+.half-bottom
+  margin-bottom 10px !important
+.add-bottom 
+  margin-bottom 20px !important
+.clear
+  clear both
+  width 100%
