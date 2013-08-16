@@ -1,37 +1,23 @@
 {
   "name": "main",
-  "repo": "lauramelos/main",
-  "description": "Archivo javascript compilado para el theme de wordpress",
+  "repo": "lovecino/main",
+  "description": "Lo vecino",
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
     "component/jquery": "1.8.2",
     "component/inherit": "0.0.2",
     "component/emitter": "0.0.6",
-    "component/dropdown": "*",
-    "component/dialog": "*",
     "visionmedia/page.js": "*",
     "visionmedia/node-querystring" : "*",
     "visionmedia/superagent": "0.10.0",
-    "visionmedia/debug": "0.7.2",
-    "lauramelos/isotope": "*",
-    "lauramelos/infinite-scroll": "*",
-    "lauramelos/swipe": "*",
-    "component/user-agent-parser": "*",
-    "component/menu": "*"
+    "visionmedia/debug": "0.7.2"
   },
   "development": {},
   "license": "MIT",
   "scripts": [
     "index.js",
-    "bind.js",
-    "map.js",
-    "eventspol.js",
-    "reduce.js",
-    "item.js",
-    "stream.js",
     "routing.js",
-    "request.js",
     "config.js"
   ]
 }
